@@ -1,4 +1,4 @@
-#!/bin/bash
+#/bin/bash
 # Install requirements for CAHW CamHD demo
 
 # install requirements
@@ -6,9 +6,18 @@ sudo apt-get update
 sudo apt-get -y -q install pkgconf ffmpeg libavfilter-dev libavdevice-dev build-essential
 
 # install PyAV
+cd ~/cahw2018_camhd/
 git clone https://github.com/mikeboers/PyAV.git
 cd PyAV/
 pip install .
 
 # return to cahw2018_camhd directory
-cd ~/cahw2018_camhd
+cd ~/cahw2018_camhd/
+
+# install pycamhd
+git clone https://github.com/tjcrone/pycamhd.git
+cd pycamhd/
+pip install .
+
+# return to cahw2018_camhd directory
+cd ~/cahw2018_camhd/
