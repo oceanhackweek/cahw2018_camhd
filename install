@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# install requirements
+sudo apt-get update
+sudo apt-get -y -q install pkgconf ffmpeg libavfilter-dev libavdevice-dev build-essential
+
+# install PyAV
+git clone https://github.com/mikeboers/PyAV.git
+cd PyAV/
+pip install .
