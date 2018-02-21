@@ -14,7 +14,7 @@ sudo apt-get update
 sudo apt-get -y -q install pkgconf ffmpeg libavfilter-dev libavdevice-dev build-essential openssh-client vim less jq man-db
 
 # pip install numpngw
-pip install numpngw
+pip install numpngw cython
 
 # pip install PyAV
 if [ -d "/home/jovyan/cahw2018_camhd/PyAV" ]; then
