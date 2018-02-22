@@ -22,13 +22,12 @@ git clone https://github.com/mikeboers/PyAV.git
 cd PyAV/
 pip install .
 
-# return to cahw2018_camhd directory
-cd ~/cahw2018_camhd/
-
 # pip install pycamhd
+cd ~/cahw2018_camhd/
 git clone https://github.com/tjcrone/pycamhd.git
 cd pycamhd/
 pip install .
+cd
 
-# return to cahw2018_camhd directory
-cd ~/cahw2018_camhd/
+# update worker-template.yaml
+sed -i 's/daskdev\/pangeo-worker:2018-02-14/tjcrone\/pangeo-worker:2018-02-22/' worker-template.yaml
